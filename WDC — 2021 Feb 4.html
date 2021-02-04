@@ -17524,7 +17524,24 @@ Found The Martian, 141 min, dir Ridley Scott
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># dict of dicts</span>
+
+<span class="n">movies</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Spotlight&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="s1">&#39;min&#39;</span><span class="p">:</span><span class="mi">129</span><span class="p">,</span> <span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="s1">&#39;Tom McCarthy&#39;</span><span class="p">},</span>
+          <span class="s1">&#39;The Big Short&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="s1">&#39;min&#39;</span><span class="p">:</span><span class="mi">130</span><span class="p">,</span> <span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="s1">&#39;Adam McKay&#39;</span><span class="p">},</span>
+          <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span><span class="s1">&#39;The Martian&#39;</span><span class="p">,</span> <span class="s1">&#39;min&#39;</span><span class="p">:</span><span class="mi">141</span><span class="p">,</span> <span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="s1">&#39;Ridley Scott&#39;</span><span class="p">,</span>
+           <span class="s1">&#39;sale&#39;</span><span class="p">:</span><span class="kc">True</span><span class="p">}]</span>
+
+<span class="n">look_for</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter movie name: &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">one_movie</span> <span class="ow">in</span> <span class="n">movies</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">look_for</span> <span class="o">==</span> <span class="n">one_movie</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Found </span><span class="si">{</span><span class="n">look_for</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">one_movie</span><span class="p">[</span><span class="s2">&quot;min&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1"> min, dir </span><span class="si">{</span><span class="n">one_movie</span><span class="p">[</span><span class="s2">&quot;dir&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;sale&#39;</span> <span class="ow">in</span> <span class="n">one_movie</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">Also: On sale!&#39;</span><span class="p">)</span>
+        <span class="k">break</span>
+        
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Did not find </span><span class="si">{</span><span class="n">look_for</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
