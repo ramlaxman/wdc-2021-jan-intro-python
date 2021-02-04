@@ -17671,15 +17671,235 @@ Did not find l;jl;jljkljkljk
 
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[125]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">movie_name_dict</span><span class="p">[</span><span class="s1">&#39;Spotlight&#39;</span><span class="p">][</span><span class="s1">&#39;min&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">555</span>
+
+<span class="n">movie_name_dict</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[125]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;Spotlight&#39;: {&#39;name&#39;: &#39;Spotlight&#39;, &#39;min&#39;: 555, &#39;dir&#39;: &#39;Tom McCarthy&#39;},
+ &#39;The Big Short&#39;: {&#39;name&#39;: &#39;The Big Short&#39;, &#39;min&#39;: 130, &#39;dir&#39;: &#39;Adam McKay&#39;},
+ &#39;The Martian&#39;: {&#39;name&#39;: &#39;The Martian&#39;, &#39;min&#39;: 141, &#39;dir&#39;: &#39;Ridley Scott&#39;}}</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[126]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">movie_dir_dict</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[126]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;Tom McCarthy&#39;: {&#39;name&#39;: &#39;Spotlight&#39;, &#39;min&#39;: 555, &#39;dir&#39;: &#39;Tom McCarthy&#39;},
+ &#39;Adam McKay&#39;: {&#39;name&#39;: &#39;The Big Short&#39;, &#39;min&#39;: 130, &#39;dir&#39;: &#39;Adam McKay&#39;},
+ &#39;Ridley Scott&#39;: {&#39;name&#39;: &#39;The Martian&#39;, &#39;min&#39;: 141, &#39;dir&#39;: &#39;Ridley Scott&#39;}}</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">movie_name_dict</span><span class="p">[</span><span class="s1">&#39;Spotlight&#39;</span><span class="p">][</span><span class="s1">&#39;min&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">555</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 
-<span class="n">movie_name_d</span>
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[127]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># dict of dicts</span>
+
+<span class="n">movies</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Spotlight&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="s1">&#39;min&#39;</span><span class="p">:</span><span class="mi">129</span><span class="p">,</span> <span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="s1">&#39;Tom McCarthy&#39;</span><span class="p">},</span>
+          <span class="s1">&#39;The Big Short&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="s1">&#39;min&#39;</span><span class="p">:</span><span class="mi">130</span><span class="p">,</span> <span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="s1">&#39;Adam McKay&#39;</span><span class="p">},</span>
+          <span class="s1">&#39;The Martian&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;min&#39;</span><span class="p">:</span><span class="mi">141</span><span class="p">,</span> <span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="s1">&#39;Ridley Scott&#39;</span><span class="p">,</span><span class="s1">&#39;sale&#39;</span><span class="p">:</span><span class="kc">True</span><span class="p">}</span>
+         <span class="p">}</span>
+
+<span class="n">look_for</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter movie name: &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="n">look_for</span> <span class="ow">in</span> <span class="n">movies</span><span class="p">:</span>
+    <span class="n">one_movie</span> <span class="o">=</span> <span class="n">movies</span><span class="p">[</span><span class="n">look_for</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Found </span><span class="si">{</span><span class="n">look_for</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">one_movie</span><span class="p">[</span><span class="s2">&quot;min&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1"> min, dir </span><span class="si">{</span><span class="n">one_movie</span><span class="p">[</span><span class="s2">&quot;dir&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s1">&#39;sale&#39;</span> <span class="ow">in</span> <span class="n">one_movie</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">Also: On sale!&#39;</span><span class="p">)</span>
+        
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Did not find </span><span class="si">{</span><span class="n">look_for</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Enter movie name: asdfa
+Did not find asdfa
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[128]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">movies</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Spotlight: {&#39;min&#39;: 129, &#39;dir&#39;: &#39;Tom McCarthy&#39;}
+The Big Short: {&#39;min&#39;: 130, &#39;dir&#39;: &#39;Adam McKay&#39;}
+The Martian: {&#39;min&#39;: 141, &#39;dir&#39;: &#39;Ridley Scott&#39;, &#39;sale&#39;: True}
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[129]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">movie_name</span><span class="p">,</span> <span class="n">movie_info</span> <span class="ow">in</span> <span class="n">movies</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">movie_name</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">movie_info</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Spotlight: {&#39;min&#39;: 129, &#39;dir&#39;: &#39;Tom McCarthy&#39;}
+The Big Short: {&#39;min&#39;: 130, &#39;dir&#39;: &#39;Adam McKay&#39;}
+The Martian: {&#39;min&#39;: 141, &#39;dir&#39;: &#39;Ridley Scott&#39;, &#39;sale&#39;: True}
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
      </div>
