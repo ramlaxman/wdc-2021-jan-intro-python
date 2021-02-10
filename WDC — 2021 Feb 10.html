@@ -19414,7 +19414,9 @@ c::200
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Exercise:-xml">Exercise: xml<a class="anchor-link" href="#Exercise:-xml">&#182;</a></h1><p>1.</p>
+<h1 id="Exercise:-xml">Exercise: xml<a class="anchor-link" href="#Exercise:-xml">&#182;</a></h1><ol>
+<li>b</li>
+</ol>
 
 </div>
 </div><firstname>Reuven</firstname>
@@ -19426,12 +19428,47 @@ c::200
 
 
 <user_info>
-    <name>
+    <name language="English">
         <first>Reuven</first>
         <last>Lerner</last>
     </name>
-    <empllo
-</user_info>
+    <company></company>
+</user_info><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">xml</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">))</span>               <span class="c1"># first argument = tagname</span>
+<span class="c1"># &lt;foo&gt;&lt;/foo&gt;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">xml</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">))</span>        <span class="c1"># second (optional) argument = content</span>
+<span class="c1"># # # # &lt;foo&gt;bar&lt;/foo&gt;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">xml</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span>
+          <span class="n">xml</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span>
+              <span class="n">xml</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;hello&#39;</span><span class="p">))))</span>
+<span class="c1"># # # # # # &lt;a&gt;&lt;b&gt;&lt;c&gt;hello&lt;/c&gt;&lt;/b&gt;&lt;/a&gt;</span>
+
+<span class="c1"># # # kwargs become attributes in opening tag</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">xml</span><span class="p">(</span><span class="s1">&#39;tag&#39;</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">3</span><span class="p">))</span>
+
+<span class="c1"># # # # &lt;tag a=&quot;1&quot; b=&quot;2&quot; c=&quot;3&quot;&gt;text&lt;/tag&gt;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">xml</span><span class="p">(</span><span class="s1">&#39;tag&#39;</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1"># # # # &lt;tag a=&quot;1&quot; b=&quot;2&quot;&gt;text&lt;/tag&gt;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">xml</span><span class="p">(</span><span class="s1">&#39;tag&#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1"># # # # # &lt;tag a=&quot;1&quot; b=&quot;2&quot;&gt;&lt;/tag&gt;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
 </body>
 
 
