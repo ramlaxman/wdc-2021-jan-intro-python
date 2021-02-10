@@ -19477,10 +19477,10 @@ c::200
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[195]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[197]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">xml</span><span class="p">(</span><span class="n">tagname</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">xml</span><span class="p">(</span><span class="n">tagname</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;&lt;</span><span class="si">{</span><span class="n">tagname</span><span class="si">}</span><span class="s1">&gt;</span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="s1">&lt;/</span><span class="si">{</span><span class="n">tagname</span><span class="si">}</span><span class="s1">&gt;&#39;</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">xml</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">))</span> 
@@ -19489,6 +19489,10 @@ c::200
 <span class="nb">print</span><span class="p">(</span><span class="n">xml</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span>
           <span class="n">xml</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span>
               <span class="n">xml</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;hello&#39;</span><span class="p">))))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">xml</span><span class="p">(</span><span class="s1">&#39;tag&#39;</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">xml</span><span class="p">(</span><span class="s1">&#39;tag&#39;</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">xml</span><span class="p">(</span><span class="s1">&#39;tag&#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -19511,6 +19515,9 @@ c::200
 <pre>&lt;foo&gt;&lt;/foo&gt;
 &lt;foo&gt;bar&lt;/foo&gt;
 &lt;a&gt;&lt;b&gt;&lt;c&gt;hello&lt;/c&gt;&lt;/b&gt;&lt;/a&gt;
+&lt;tag&gt;text&lt;/tag&gt;
+&lt;tag&gt;text&lt;/tag&gt;
+&lt;tag&gt;&lt;/tag&gt;
 </pre>
 </div>
 </div>
