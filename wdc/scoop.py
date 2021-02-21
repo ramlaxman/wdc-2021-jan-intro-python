@@ -2,6 +2,9 @@ class Scoop:
     def __init__(self, flavor):
         self.flavor = flavor
 
+    def __repr__(self):
+        return f'Scoop of {self.flavor}'
+
 
 # is-a : inheritance  A is-a B    Car is-a Vehicle
 # has-a: composition  A has-a B   Bowl has-a Scoop
@@ -31,6 +34,23 @@ class Bowl:
         #     output.append(one_scoop.flavor)
         #
         # return output
+
+    def __repr__(self):
+        output = f'{type(self).__name__} of: \n'
+        #
+        # for one_scoop in self.scoops:
+        #     output += f'\t- {one_scoop}\n'
+        #
+
+        output += '\n'.join([f'\t- {one_scoop}'
+                            for one_scoop in self.scoops])
+
+        return output
+
+    def __len__(self):
+        return len(self.scoops)
+
+
 
 
 class BigBowl(Bowl):

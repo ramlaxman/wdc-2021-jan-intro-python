@@ -24,3 +24,8 @@ bb.add_scoops(s1, s2)   # add_scoops can take *any* number of Scoop arguments
 bb.add_scoops(s3)
 bb.add_scoops(s4, s5, s6)
 print(bb.flavors())     # prints a list of strings, the flavors from the scoops
+
+print(s1)
+print(b)
+print(bb)
+print(len(b))
